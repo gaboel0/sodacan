@@ -1,0 +1,52 @@
+body{
+    overflow: hidden;
+    background-color: rgb(77, 13, 13);
+}
+
+
+.banner{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.banner .produto{
+    width: 500px;
+    height:700px;
+    position:absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left: 0px;
+    display: flex;
+}
+.banner .produto .lata{
+    background: 
+        
+        var(--url) var(--left) 0,
+        url(images/freepik-export-20240729165543IRMA.png);
+        width: 50%;
+
+    background-size:auto 100%;
+    width: 260px;
+    aspect-ratio: 1.3 / 3.4;
+    background-blend-mode: multiply;
+    mask-image: url(images/freepik-export-20240729165543IRMA.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner .produto:hover{
+    --left: -1000px;
+    transform: translateX(-50%) translateY(-120px)
+}
+.banner .produto .lata:nth-child(2){
+    opacity: 0;
+}
+.banner .produto:hover .lata:nth-child(2){
+    opacity: 1;
+}
+
