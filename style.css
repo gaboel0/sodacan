@@ -1,32 +1,29 @@
 body {
     overflow: hidden;
-    background-color: rgb(77, 13, 13); /* Cor inicial do fundo */
-    transition: background-color 0.7s ease; /* Transição suave para a cor de fundo */
-    animation: changeBack 2s forwards; /* Animação contínua */
-
-    
+    background-color: rgb(77, 13, 13);
+    transition: background-color 0.7s ease;
+    animation: changeBack 2s forwards;
 }
 
 body.hover {
-    animation: changeBackgroundColor 2s forwards; /* Animação contínua */
+    animation: changeBackgroundColor 2s forwards;
 }
- 
 
 @keyframes changeBackgroundColor {
     0% {
-        background-color: rgb(77, 13, 13); /* Vermelho */
+        background-color: rgb(77, 13, 13);
     }
     100% {
-        background-color: rgb(228, 92, 2); /* Laranja */
+        background-color: rgb(228, 92, 2);
     }
 }
 
-@keyFrames changeBack {
+@keyframes changeBack {
     0% {
-        background-color: rgb(228, 92, 2); 
+        background-color: rgb(228, 92, 2);
     }
     100% {
-        background-color: rgb(77, 13, 13); 
+        background-color: rgb(77, 13, 13);
     }
 }
 
